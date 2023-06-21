@@ -1,62 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeliReceitas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div id="nav-container">
-            <p id="site-logo">Deli<span>Receitas</span></p>
-            <nav id="content-nav">
-                <ul>
-                    <li>Noticias</li>
-                    <li>Receitas</li>
-                </ul>
-            </nav>
-            <nav id="search-nav">
-                <ul>
-                    <li><input type="search" id="search" placeholder="Digite o que deseja procurar"></li>
-                    <li><button id="search-button">Procurar</button></li>
-                </ul>
-            </nav>
+  <header>
+    <div id="nav-container">
+      <p id="site-logo">Deli<span>Receitas</span></p>
+      <nav id="content-nav">
+        <ul>
+          <li><a href="#news-container">Noticias</a></li>
+          <li><a href="#recipe-container">Receitas</a></li>
+        </ul>
+      </nav>
+      <nav id="search-nav">
+        <ul>
+          <li><input type="search" id="search" placeholder="Digite o que deseja procurar"></li>
+          <li><button id="search-button">Procurar</button></li>
+        </ul>
+      </nav>
+    </div>
+    <menu>
+      <ul>
+        <li><span>Comida brasileira</span></li>
+        <li>Massas</li>
+        <li>Sobremesas</li>
+        <li>Comida italiana</li>
+        <li>Fast food</li>
+        <li>Comida japonesa</li>
+        <li>Comida mexicana</li>
+        <li>Comida saudável</li>
+        <li>Saladas</li>
+        <li>Gourmet</li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <section id="presentation-container">
+      <h1>Bem-vindo ao site mais completo de receitas deliciosas do Brasil</h1>
+    </section>
+    <section id="feature-container">
+      <div class="page-div">
+        <hr>
+        <h1>Em destaque</h1>
+        <hr>
+      </div>
+      <div id="feature-wrapper">
+        <div id="feature1" class="feature-box">
+          <h2>Jantar romântico</h2>
         </div>
-        <menu>
-            <ul>
-                <li><span>Comida brasileira</span></li>
-                <li>Massas</li>
-                <li>Sobremesas</li>
-                <li>Comida italiana</li>
-                <li>Fast food</li>
-                <li>Comida japonesa</li>
-                <li>Comida mexicana</li>
-                <li>Comida saudável</li>
-                <li>Saladas</li>
-                <li>Gourmet</li>
-            </ul>
-        </menu>
-    </header>
-    <main>
-        <section id="presentation-container">
-            <h1>Bem-vindo ao site mais completo de receitas deliciosas do Brasil</h1>
-        </section>
-        <section id="feature-container">
-            <div id="feature1" class="feature-box">
-                <h2>Jantar romântico</h2>
-            </div>
-            <div id="feature2" class="feature-box">
-                <h2>Receitas criativas</h2>
-            </div>
-        </section>
-        <section id="news-container">
-
-        </section>
-        <section id="recipe-container">
-
-        </section>
-    </main>
-    <footer></footer>
+        <div id="feature2" class="feature-box">
+          <h2>Receitas criativas</h2>
+        </div>
+      </div>
+    </section>
+    <section id="news-container">
+      <h1 class="section-title">Notícias</h1>
+      <div class="box-wrapper">
+        <div class="box">
+          <div id="image1" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Cozinhe com seu parceiro</p>
+            <p class="box-paragraph">Estudos apontam que cozinhar com seu parceiro...</p>
+          </div>
+        </div>
+        <div class="box center">
+          <div id="image2" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Melhor alimento para tratamento de cancêr</p>
+            <p class="box-paragraph">Foi descoberto um alimento da culinária do país...</p>
+          </div>
+        </div>
+        <div class="box">
+          <div id="image3" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Melhores alimentos para um evento social</p>
+            <p class="box-paragraph">Se você tem um encontro com os seus amigos hoje e...</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-wrapper">
+        <div class="box">
+          <div id="image4" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Alimento mais saudavél</p>
+            <p class="box-paragraph">9 a cada 10 estudos apontaram que frango com salada...</p>
+          </div>
+        </div>
+        <div class="box center">
+          <div id="image5" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Melhor programação com a familia</p>
+            <p class="box-paragraph">A procura do que fazer para seu encontro de familia...</p>
+          </div>
+        </div>
+        <div class="box">
+          <div id="image6" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Como eram os banquetes reais</p>
+            <p class="box-paragraph">A cerca de 1000 anos atrás quando o feudalismo...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="recipe-container">
+      <h1 class="section-title">Receitas</h1>
+      <div class="box-wrapper">
+        <div class="box">
+          <div id="image7" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Almodengas Alemãs</p>
+          </div>
+        </div>
+        <div class="box center">
+          <div id="image8" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Bisteca no ponto</p>
+          </div>
+        </div>
+        <div class="box">
+          <div id="image9" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Sopa de cogumelos</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-wrapper">
+        <div class="box">
+          <div id="image10" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Panquecas americanas</p>
+          </div>
+        </div>
+        <div class="box center">
+          <div id="image11" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Cheese cake da suiço</p>
+          </div>
+        </div>
+        <div class="box">
+          <div id="image12" class="image">
+            <span></span>
+          </div>
+          <div class="box-description">
+            <p class="box-title">Pão doce noruêgues</p>
+          </div>
+        </div>
+      </div>
+      <div id="more" class="page-div">
+        <hr>
+        <h1>Veja mais</h1>
+        <hr>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section id="footer-section">
+      <ul>
+        <li>Quem somos</li>
+        <li>Contato</li>
+        <li>Sugestões</li>
+      </ul>
+      <p>Todos os direitos reservados DeliReceitas</p>
+    </section>
+  </footer>
 </body>
+
 </html>

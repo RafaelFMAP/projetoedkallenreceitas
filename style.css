@@ -4,13 +4,19 @@
     padding: 0;
     list-style: none;
     border-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* header */
 
 header {
     margin: 0 0 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -27,10 +33,14 @@ header {
 
 #nav-container {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1.5rem 15rem; 
+    z-index: 10;
+    background-color: white;
+    width: 100%;
 }
 
 nav ul{
@@ -60,7 +70,14 @@ nav ul{
     border-radius: 0 1.5rem 1.5rem 0;
     color: white;
     background-color: #da7de2;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#search-nav button:hover {
+    cursor: pointer;
+}
+
+menu {
+    padding: 5.75rem 0 0;
 }
 
 menu ul{
@@ -73,6 +90,12 @@ menu ul{
 menu ul li {
     padding: 0 0.5rem;
 }
+
+menu ul li:hover {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
 menu ul li span {
     color:#da7de2;
 }
@@ -88,10 +111,9 @@ main {
     height: 70vh;
     width: 100%;
     background-image: url("brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
-    background-repeat: cover;
-    background-size: 100%;
+    background-size: cover;
     border-radius: 1rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
 }
 
 #presentation-container h1{
@@ -106,7 +128,29 @@ main {
     border-radius: 1rem;
 }
 
-#feature-container {
+.page-div {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.page-div h1 {
+    margin: 0 1rem 0;
+    padding: 0 1rem 0;
+    color: white;
+    background-color: #da7de2;
+    border-radius: 5rem;
+}
+
+.page-div hr {
+    width: 40%;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#feature-wrapper {
     display: flex;
     text-align: center;
 }
@@ -123,14 +167,14 @@ main {
 #feature1 {
     background-image: url('faizan-OdyMB4IZt3w-unsplash.jpg');
     background-position: 50%;
-    background-size: 100%;
+    background-size: cover;
     margin-right: 0.5rem;
 }
 
 #feature2 {
     background-image: url('jed-owen-q6Y8Xr3SoQA-unsplash.jpg');
     background-position: 50%;
-    background-size: 100%;
+    background-size: cover;
     margin-left: 0.5rem;
 }
 
@@ -144,4 +188,175 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     color: white;
+}
+
+.feature-box h2:hover {
+    background-color: rgba(0,0,0,0);
+    transition-duration: 1000ms;
+    cursor: pointer;
+}
+
+#news-container {
+    margin: 0 0 1.5rem;
+}
+
+.section-title{
+    text-align: center;
+    color: #da7de2;
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 1rem;
+    border-radius: 5rem;
+}
+
+.box.center{
+    margin: 0 1rem 0;
+}
+
+.box .image {
+    max-width: 100%;
+    background-color: black;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#image1 {
+    background-image: url('jason-briscoe-VBsG1VOgLIU-unsplash.jpg');
+}
+
+#image2 {
+    background-image: url('peter-dawn-jyEovFEUsOA-unsplash.jpg');
+}
+
+#image3 {
+    background-image: url('antenna-ZDN-G1xBWHY-unsplash.jpg');
+}
+
+#image4 {
+    background-image: url('ruyan-ayten-gUFI8SxNvxo-unsplash.jpg');
+}
+
+#image5 {
+    background-image: url('zach-reiner-Jwuv9ngb3UE-unsplash.jpg');
+}
+
+#image6 {
+    background-image: url('madie-hamilton-Q9yr-cvJr30-unsplash.jpg');
+}
+
+#image7 {
+    background-image: url('emiliano-vittoriosi-OFismyezPnY-unsplash.jpg');
+    background-position: center;
+}
+
+#image8 {
+    background-image: url('emerson-vieira-cpkPJ-U9eUM-unsplash.jpg');
+}
+
+#image9 {
+    background-image: url('brooke-lark-oaz0raysASk-unsplash.jpg');
+    background-position: center;
+}
+
+#image10 {
+    background-image: url('chad-montano-eeqbbemH9-c-unsplash.jpg');
+    background-position: center;
+}
+
+#image11 {
+    background-image: url('anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg');
+    background-position: center;
+}
+
+#image12 {
+    background-image: url('joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg');
+    background-position: top;
+    transition: all 10000ms ease;
+}
+
+.image span {
+    display: flex;
+    padding: 150px 0 150px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem 1rem 0 0;
+    color: white;
+}
+
+.image span:hover {
+    background-color: rgba(0,0,0,0);
+    transition-duration: 1000ms;
+    cursor: pointer;
+}
+
+.box-description {
+    text-align: center;
+    align-items: center;
+    background-color: #da7de2;
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.box-description .box-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-description .box-paragraph {
+    overflow-inline: hidden;
+}
+
+#recipe-container {
+    margin: 0 0 1.5rem;
+}
+
+#more {
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: #da7de2;
+    padding: 5rem 0;
+    color: white;
+    font-size: 20px;
+}
+
+#footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+#footer-section ul {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+#footer-section ul li {
+    padding: 0 0.5rem;
+}
+
+#footer-section ul li:hover {
+    cursor: pointer;
 }
