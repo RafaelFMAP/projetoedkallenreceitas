@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-style: none;
+}
+
+/* header */
+
+header {
+    margin: 0 0 1rem;
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#site-logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c15fca;
+}
+
+#site-logo span{
+    color:#da7de2;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 1.5rem 15rem; 
+}
+
+nav ul{
+    display: flex;
+}
+
+#content-nav li {
+    padding: 0 1.5rem;
+    font-size: 18px;
+}
+
+#search-nav ul {
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px #da7de2;
+}
+
+#search-nav input {
+    padding: 8px;
+    width: 12.5rem;
+    height: 40px;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+#search-nav button {
+    padding: 0.5rem;
+    height: 40px;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: white;
+    background-color: #da7de2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+menu ul li {
+    padding: 0 0.5rem;
+}
+menu ul li span {
+    color:#da7de2;
+}
+
+/* main */
+
+main {
+    margin: 0 15rem;
+}
+
+#presentation-container {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background-image: url("brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
+    background-repeat: cover;
+    background-size: 100%;
+    border-radius: 1rem;
+    margin: 0 0 1rem;
+}
+
+#presentation-container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+#feature-container {
+    display: flex;
+    text-align: center;
+}
+
+.feature-box {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#feature1 {
+    background-image: url('faizan-OdyMB4IZt3w-unsplash.jpg');
+    background-position: 50%;
+    background-size: 100%;
+    margin-right: 0.5rem;
+}
+
+#feature2 {
+    background-image: url('jed-owen-q6Y8Xr3SoQA-unsplash.jpg');
+    background-position: 50%;
+    background-size: 100%;
+    margin-left: 0.5rem;
+}
+
+.feature-box h2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    color: white;
+}
